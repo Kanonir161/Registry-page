@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login V13</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="/util.css">
+	<link rel="stylesheet" href="/main.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<!--===============================================================================================-->
+</head>
+
+<body style="background-color: #999999;">
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more" style="background-image: url('Kianu.jpeg');"></div>
+
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="login100-form validate-form" action='/home1/:_id' method="POST">
+					<span class="login100-form-title p-b-59">
+						Self Information
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<span class="label-input100">Firstname</span>
+						<input class="input100" type="text" name="firstname" value={{firstname}}>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">Lastname</span>
+						<input class="input100" type="text" name="lastname" value={{lastname}}>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<span class="label-input100">Phonenumber</span>
+						<input class="input100" type="text" name="phonenumber" value={{phonenumber}}>
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<span class="label-input100">Country</span>
+						<input class="input100" type="text" name="country" value={{country}}>
+						<span class="focus-input100"></span>
+					</div>
+
+
+
+					<div class="flex-m w-full p-b-33">
+						<div class="contact100-form-checkbox">
+
+							</label>
+						</div>
+
+
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Change
+							</button>
+						</div>
+
+						<a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30"
+							onClick='location.href = "http://localhost:3000/logout"'>
+							Log out
+							<i class="fa fa-long-arrow-right m-l-5"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+
+</html>
